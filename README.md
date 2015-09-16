@@ -1,6 +1,6 @@
 # ASP.NET MVC / Kendo UI Numeric Textbox and client validation
 
-This is a simple project to demonstrate that there appears to be an incompatability between Microsoft jQuery Unobstrusive validation and the Kendo UI Numeric textbox
+This is a simple project to demonstrate that there appears to be an incompatibility between Microsoft jQuery Unobstrusive validation and the Kendo UI Numeric textbox
 
 The project comprises the following:
 
