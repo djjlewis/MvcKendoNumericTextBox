@@ -59,14 +59,14 @@ namespace MvcKendoNumericTextBox.Controllers
             }
         }
 
-        public ActionResult CreateNoValidation()
+        public ActionResult CreateWorking()
         {
             var model = new Person();
             return View();
         }
 
         [HttpPost]
-        public ActionResult CreateNoValidation(Person model)
+        public ActionResult CreateWorking(Person model)
         {
             if (!ModelState.IsValid)
             {
