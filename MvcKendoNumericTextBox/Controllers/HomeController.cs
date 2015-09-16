@@ -58,5 +58,27 @@ namespace MvcKendoNumericTextBox.Controllers
                 return RedirectToAction("Index");
             }
         }
+
+        public ActionResult CreateNoValidation()
+        {
+            var model = new Person();
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult CreateNoValidation(Person model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            else
+            {
+                model.Id = people.Max(m => m.Id) + 1;
+                people.Add(model);
+                return RedirectToAction("Index");
+            }
+        }
+
     }
 }

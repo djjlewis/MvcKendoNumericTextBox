@@ -1,12 +1,12 @@
 ﻿@model MvcKendoNumericTextBox.Models.Person
 @{
     ViewBag.Title = "Index";
-    Html.EnableClientValidation(true);
+    Html.EnableClientValidation(false);
 }
 
 <h2>Index</h2>
 
-@using (Html.BeginForm("Create", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form" })) 
+@using (Html.BeginForm("CreateNoValidation", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form" })) 
 { 
     <div class="form-group">
         @Html.LabelFor(m => m.Name, new { @class = "col-md-2 control-label" })
